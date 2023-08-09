@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Home Appliances</title>
+ 
+  <style>
+     a{
+        text-decoration:none;
+        color:white;
+    }
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction:column;
+    
+  }
+  #logo
+  {
+    font-size:38px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-right:30px;
+  }
+  .lefter
+  {
+    display:flex;
+    align-items:center;
+    
+  }
+  .location-bar input {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius:20px;
+  font-size:14px;
+  background-color: white;
+}
+
+
+     header {
+    background-color: rgb(5, 5, 101);
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    height:70px;
+  }
+ 
+   
+header ul{
+    display:flex;
+    list-style:none;
+    justify-content:center;
+    align-items:center;
+    color: rgb(2, 2, 4);
+}
+#menu li{
+    padding:10px;
+    margin: 20px;
+    color: rgb(251, 252, 254);
+   
+}
+#social-links li{
+    
+    margin:0 20px;
+    color: black;
+}
+  .container {
+  position: relative;
+  width: 100%;
+  height: 410px;
+  background-image: url("back.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size:30px;
+  
+  text-align: center;
+}
+.text1
+{
+    height:200px;
+    width:60%;
+    position: absolute;
+  top: 25%;
+  left: 20%;
+  color: white;
+  text-align: center;
+  font-size:28px;
+}
+
+.search-form {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+}
+.search-button {
+  padding: 8px 16px;
+  background-color: rgb(5, 5, 101);
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+h1{
+    margin-bottom:10px;
+}
+.rect{
+    
+    display:flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    margin-top: 5px;
+  }
+  .rect + h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+  }
+ 
+  .box{
+    border: 2px solid rgb(5, 5, 101);
+    height:370px; 
+    width:200px;
+   
+    margin-top: 30px;
+    background-color:  white;
+  }
+  .box1{
+    border: 2px solid rgb(5, 5, 101);
+    height:370px; 
+    width:200px;
+   
+    margin-top: 30px;
+    background-color: white;
+    
+  }
+
+
+  .content{
+    height:200px;
+    width:195px;
+    background-image: contain;
+   
+
+  }
+  #po{
+    text-align: center;
+    color:black;
+   
+    vertical-align:middle;
+    margin-top:10px;
+    margin-bottom: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+  }
+  p{
+    text-align: center;
+    color: black;
+    margin-top: 0;
+}
+
+
+  footer {
+    background-color: rgb(5, 5, 101);
+    height: 70px;
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+   
+  }
+      </style>
+</head>
+<body>
+ <header>
+    <div class="lefter">
+        <div id="logo">
+            <a href="#"><img style="height:50px;width:50px;margin-left:7px;margin-top:2px;"src="logoS.jpeg"></a> 
+            </div>
+            <div class="location-bar">
+             <input type="text" placeholder="Enter your City">
+          
+         </div>
+    </div>
+   
+    
+    
+  
+    <nav id="menu">
+   
+      <ul>
+       
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+   <nav id="social-links">
+    <ul>
+        
+        <li><a style="border:1px ;padding:8px 15px 8px 15px;background-color:white;color:black;border-radius:20px"href="login.html" target="_blank">sign up</a></li>
+        <li><a href="#"><img src="shopping-cart.avif"  style="height:40px;width:40px;border-radius:20px"></a></li>
+      </ul>
+   </nav>
+      
+     
+   
+ </header>
+ <body >
+  <div class="container">
+     
+      <div class="text"><span><b>Office solutions </b></span></div><br>
+      <p class="text1"><span>"Elevating Workspaces, Fulfilling Solutions."</span></p>
+    
+      <form class="search-form">
+          <input type="text" placeholder="Search for items" class="search-input">
+          <button type="submit" class="search-button">Shop</button>
+        </form>
+    </div>
+
+
+
+    <div style="color: rgb(5, 5, 101);text-align: center"><h1><b>Our Products </b></h1></div><br>
+
+    <div class="rect" style="margin-top: 5px;">
+      <div class="box">
+        <div class="content" style="background-image: url('furniture.jpeg');"></div>
+       <b> <p id="po">FURNITURE</p></b>
+        <p>"Elevate Your Workspace with Our Premium Office Furniture Collection – Where Comfort Meets Productivity."</p>
+     
+      </div> 
+      <div class="box">
+        <div class="content" style="background-image: url('tech.jpeg');"></div>
+       <b> <p id="po">TECH TOOLS</p></b><p>
+        "Empower Your Efficiency with Cutting-Edge Tech Tools – Redefining Work in the Modern Office."</p>
+     </div>
+      <div class="box">
+        <div class="content" style="background-image: url('stationary.jpeg');"></div>
+        <b><p id="po">STATIONARY</p></b><p>"Uplift Your Organization with Our Wide Range of High-Quality Stationery – Where Every Detail Inspires Productivity."</p>
+       
+      </div>
+    </div>
+      <div class="rect">
+      <div class="box1">
+        <div class="content" style="background-image: url('sleek.jpeg');"></div>
+       <b> <p id="po">SLEEK OFFICE INTERIORS</p></b><p>"Transform Your Office into a Haven of Elegance with Our Sleek Interior Solutions – Where Functionality Meets Sophistication."</p></div>
+      <div class="box1">
+        <div class="content" style="background-image: url('greenProducts.jpeg');"></div>
+       <b> <p id="po">GREEN OFFICE PRODUCTS</p></b><p>
+        "Shape a Sustainable Future for Your Workspace with Our Green Office Products "</p></div>
+        <div class="box1">
+          <div class="content" style="background-image: url('more.jpeg');"></div>
+         <b> <p id="po">VIEW ALL</p></b><p>Have a look at our wide range of products</p></div>
+     </div>
+     <footer>
+      &copy; 2023 Office Solutions. All rights reserved.
+    </footer>
+
+</body>
+</html>
